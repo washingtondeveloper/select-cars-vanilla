@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vanilla Desafio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+
+    <h1>Minha Lista de Carros</h1>
+
+    <div class="root">
+
+        <div class="select">
+            <label class="label">Marca</label>
+            <select id="marcas">
+            </select>
+        </div>
+
+        <div class="select">
+            <label class="label">Modelo</label>
+            <select id="modelos">
+                <option>Selecione a marca 1ª</option>
+            </select>
+        </div>
+
+        <div class="select">
+            <label class="label">Ano</label>
+            <select id="anos">
+                <option>Selecione o Modelo 1ª</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="auto">
+        <label>Dados do veículo</label>
+        <div class="auto-description" id="auto">
+            <img src="https://via.placeholder.com/130" alt="image">
+            <div class="auto-details">
+                <h3>Marca</h3>
+                <p>Modelo</p>
+                <button>Combustivel</button> <span>Ano FIPE:Numero</span>
+            </div>
+            <div class="auto-value">
+                <h3>R$ valor</h3>
+                <p>Referência</p>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <label>Veículo favoritos</label>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">Sem carro na lista</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
